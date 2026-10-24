@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danzzcenzz STORE</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b14;
+    color: white;
+}
+
+header {
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #101525;
+    border-bottom: 1px solid #242b40;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #6ea8ff;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 20px 55px;
+    background: radial-gradient(ellipse at top, #193365, #080b14 70%);
+}
+
+.badge {
+    display: inline-block;
+    border: 1px solid #3159a0;
+    background: #14264b;
+    color: #8bb8ff;
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #70a9ff;
+}
+
+.hero p {
+    color: #aab4ca;
+    line-height: 1.8;
+    max-width: 500px;
+    margin: auto;
+    font-size: 14px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 24px;
+    background: #3979f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #8995ad;
+    font-size: 13px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: #111827;
+    border: 1px solid #263149;
+    padding: 23px;
+    border-radius: 13px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #528bff;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #a0abc0;
+    line-height: 1.7;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #80adff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.info {
+    margin-top: 35px;
+    padding: 25px;
+    background: #111827;
+    border: 1px solid #263149;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.info p {
+    color: #a0abc0;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+footer {
+    border-top: 1px solid #242b40;
+    padding: 25px 15px;
+    text-align: center;
+    color: #77839c;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 17px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .menu a {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DANZZCENZZ.</div>
+
+    <nav class="menu">
+        <a href="#beranda">Beranda</a>
+        <a href="#layanan">Layanan</a>
+    </nav>
+</header>
+
+<section class="hero" id="beranda">
+    <div class="badge">✦ WEBSITE RESMI DANZZCENZZ</div>
+
+    <h1>Welcome to <span>Danzzcenzz</span></h1>
+
+    <p>
+        Selamat datang di website Danzzcenzz.
+        Temukan informasi, layanan, dan berbagai kebutuhan
+        digital kamu dalam satu tempat.
+    </p>
+
+    <a href="#layanan" class="button">Jelajahi Website ↗</a>
+</section>
+
+<section class="container" id="layanan">
+    <div class="section-title">
+        <h2>Layanan Kami</h2>
+        <p>Pilih layanan yang ingin kamu kunjungi.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h3>Website</h3>
+            <p>Kumpulan informasi dan layanan website Danzzcenzz.</p>
+            <a href="#" onclick="info('Website'); return false;">Selengkapnya ↗</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛍️</div>
+            <h3>Store</h3>
+            <p>Temukan produk dan layanan digital yang tersedia.</p>
+            <a href="#" onclick="info('Store'); return false;">Kunjungi Store ↗</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">📱</div>
+            <h3>Media Sosial</h3>
+            <p>Temukan akun media sosial resmi Danzzcenzz.</p>
+            <a href="#" onclick="info('Media Sosial'); return false;">Lihat Akun ↗</a>
+        </div>
+
+    </div>
+
+    <div class="info">
+        <h3>Tentang Danzzcenzz</h3>
+        <p>
+            Website ini dibuat untuk menjadi pusat informasi
+            dan layanan digital Danzzcenzz.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© <span id="tahun"></span> Danzzcenzz STORE</p>
+    <p>Created with HTML, CSS & JavaScript</p>
+</footer>
+
+<script>
+document.getElementById("tahun").textContent =
+    new Date().getFullYear();
+
+function info(nama) {
+    alert("Informasi " + nama + " akan segera tersedia!");
+}
+</script>
+
+</body>
+</html>
